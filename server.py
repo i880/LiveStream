@@ -123,11 +123,11 @@ class classifier():
         cont_sky = 0 
         cont_nonky = 0  
         if model > 0.5:
-            state = 'nonsky'
+            state = 'human'
             cont_nonky +=1
             
         else:
-            state = 'sky'
+            state = 'nothuman'
             cont_sky +=1
         print(f"the frame is {state} and could find")
         return state
